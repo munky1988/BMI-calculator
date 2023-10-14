@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/form.css" rel="stylesheet">
+    <link href="style/article.css" rel="stylesheet">
+    <link href="style/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
+    <title>Oblicz BMI</title>
+</head>
+
+
+
+<body class="body">
+
+    <h1 class="header">
+        Oblicz sowje BMI!
+    </h1>
+
+    <article class="article">
+        <h2 class="header">Co to jest BMI?</h2>
+
+        <p>
+            BMI (ang. Body Mass Index), nazywany także indeksem masy ciała lub wskaźnikiem Queteleta, to parametr
+            opracowany w 1832 roku przez belgijskiego statystyka, Adolfa Queteleta. Mężczyzna ten zajmował się analizą
+            zależności pomiędzy wzrostem i wagą ciała człowieka, co pozwoliło mu dojść do pewnych wniosków. Jak
+            zaobserwował, masa ciała człowieka rośnie wraz ze wzrostem i jest ona większa u osób wyższych, natomiast
+            mniejsza u osób niższych. Stworzony przez Queteleta wskaźnik BMI pozwala zatem ocenić, czy masa naszego
+            ciała jest prawidłowa, w efekcie czego wiemy, czy prowadzony przez nas styl życia i stosowana dieta są
+            odpowiednie.
+        </p>
+    </article>
+
+    <article class="article">
+        <h2 class="header">Jak obliczyć BMI?</h2>
+
+        <p>
+            Najprostszym sposobem na obliczanie BMI jest skorzystanie z kalkulatora BMI, który dostępny jest w
+            Internecie. Wystarczy, że zaznaczymy w nim naszą płeć (nie jest to wymagane), a w odpowiednie pola wpiszemy
+            aktualną wagę i wzrost,
+            a system obliczy dla nas konkretną wartość wskaźnika. Drugą opcją jest samodzielne obliczanie BMI,
+            korzystając z poniższego wzoru:
+
+            BMI = masa ciała (kg) / wzrost2 (m)
+
+            Warto pamiętać, by podczas wyliczeń stosować odpowiednie miary.
+            W tym przypadku wzrost w cm, a wagę w kg.
+            Wynik otrzymany po obliczeniu BMI
+            stanowi jedynie informację orientacyjną, co oznacza to, że nie jesteśmy w stanie na jego podstawie w
+            szczegółowy sposób przeanalizować ogólnego stanu naszego zdrowia. W obliczeniach kierujemy się wyłącznie
+            naszą wagą i wzrostem, natomiast nie bierzemy pod uwagę takich parametrów jak zawartość tkanki tłuszczowej,
+            mięśni, kości i wody, które również powinny być w prawidłowych proporcjach, by zapewnić naszemu organizmowi
+            homeostazę.
+        </p>
+    </article>
+
+    <article class="article">
+        <h2 class="header">Normy BMI</h2>
+
+        <p>
+
+            Wynik uzyskany podczas obliczania BMI należy porównać z uogólnionymi normami dla wszystkich osób dorosłych.
+            Poszczególnym przedziałom przypisuje się konkretny stan, który odczytać możemy z poniższej tabeli
+            opracowanej przez Światową Organizację Zdrowia (WHO):
+
+        <ul>
+            <li>16,0 – wygłodzenie</li>
+            <li>16,0-16,9 – wychudzenie</li>
+            <li>17,0-18,4 – niedowaga</li>
+            <li>18,5-24,9 – waga prawidłowa</li>
+            <li>25,0-29,9 – nadwaga</li>
+            <li>30,0-34,9 – I stopień otyłości</li>
+            <li>35,0-39,9 – II stopień otyłości</li>
+            <li>40,0 – III stopień otyłości</li>
+        </ul>
+        </p>
+    </article>
+
+    <div class="BMI">
+        <h1 class="policz">Oblicz swoje BMI!</h1>
+        <p>
+        <form class="js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Twoje Dane</legend>
+                <p>
+                    <label class="form__labelText">
+                        Twój wzrost:* <input class="js-height" required type="number" min="1" step="any">
+                    </label>
+                </p>
+                <p>
+                    <label class="form__labelText">
+                        Twoja waga:*<input class="js-weight" required type="number" min="1" step="any">
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <button class="form__button">Policz BMI</button>
+            </p>
+        </form>
+        <p class="form__bmi">Twoje BMI wynosi : <strong class="js-bmi">N/A</strong></p>
+    </div>
+
+
+
+</body>
+
+</html>
